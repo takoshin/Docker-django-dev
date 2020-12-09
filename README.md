@@ -71,7 +71,7 @@ $ docker-compose run python ./manage.py collectstatic
 ~~~~~~~~~~~~~~~~~~~~~~
 $ docker-compose up -d
 ~~~~~~~~~~~~~~~~~~~~~~
-ブラウザ
+"ブラウザ"
 ~~~~~~~~~~~~~~~~~~~~
 localhost:8000/admin
 ~~~~~~~~~~~~~~~~~~~~
