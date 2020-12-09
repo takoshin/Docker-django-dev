@@ -1,6 +1,9 @@
 # Docker-django-dev
 
-インストール後の設定方法
+Python 3.9 Django 3.1 MYSQL 8.0 nginx 1.19.2
+
+
+--インストール後の設定方法--
 
 #プロジェクトの作成
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -8,6 +11,8 @@ $ docker-compose run python django-admin.py startproject app_name .
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #日本時間と日本語の設定
+
+"./src/app_name/settings.py"
 ~~~~~~~~~~~~~~~~~~~~~~~~
 LANGUAGE_CODE = 'ja'
 TIME_ZONE = 'Asia/Tokyo'
@@ -45,10 +50,15 @@ $ docker-compose run python ./manage.py createsuperuser
 ~~~~~~~~~~~~~~~~~~~~~~
 $ docker-compose up -d
 ~~~~~~~~~~~~~~~~~~~~~~
+
+"ブラウザ"
+~~~~~~~~~~~~~~
+localhost:8000
+~~~~~~~~~~~~~~
+
 #CSSの適用
 
 "./src/app_name/settings.py"
-
 ~~~~~~~~~~~~~~~~~~~~~~~
 STATIC_ROOT = '/static'
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -61,7 +71,7 @@ $ docker-compose run python ./manage.py collectstatic
 ~~~~~~~~~~~~~~~~~~~~~~
 $ docker-compose up -d
 ~~~~~~~~~~~~~~~~~~~~~~
-
-"ブラウザ"
-
+ブラウザ
+~~~~~~~~~~~~~~~~~~~~
 localhost:8000/admin
+~~~~~~~~~~~~~~~~~~~~
